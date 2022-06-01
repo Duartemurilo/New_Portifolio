@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=La+Belle+Aurore&display=swap");
+
+.App {
+  font-family: "Fira Code", monospace;
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+@media screen and (max-width: 1150px) {
+  .main-container {
+    width: 100vw;
+    margin-left: auto;
+  }
+
+  .hamburger-menu {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    top: 40px;
+    position: fixed;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: 30px;
+    display: block;
+    z-index: 1000;
+  }
+
+  .line-1,
+  .line-2,
+  .line-3 {
+    width: 30px;
+    height: 2px;
+    background-color: white;
+    margin: 7px;
+    transition: all 0.3s;
+  }
+
+  .line-1.active {
+    transform: rotate(-45deg) translate(-7px, 7px);
+  }
+
+  .line-2.active {
+    opacity: 0;
+  }
+
+  .line-3.active {
+    transform: rotate(45deg) translate(-5.5px, -6px);
+  }
+}
