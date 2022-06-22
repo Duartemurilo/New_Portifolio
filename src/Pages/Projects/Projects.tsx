@@ -1,15 +1,15 @@
 import React from "react";
 import projects from "../../data/projects";
 
-import Header from "../../Components/Header/Header";
-import FileHeader from "../../Components/FIlesHeader/FileHeader";
+import Header from "../../Components/Header";
+import FileHeader from "../../Components/FIlesHeader";
 import MenuMobile from "../../Components/MenuMobile/MenuMobile";
-import SideBar from "../../Components/SideBar/SideBar";
-import Footer from "../../Components/Footer/Footer";
+import SideBar from "../../Components/SideBar";
+import Footer from "../../Components/Footer";
 import { useContext } from "react";
 import myContext from "../../context/AppContext";
 import { ContainerProjects } from "./style_projects";
-import Project from "../../Components/Project/Project";
+import Project from "../../Components/Project";
 
 function Projects() {
   const { activeSideBar } = useContext(myContext);

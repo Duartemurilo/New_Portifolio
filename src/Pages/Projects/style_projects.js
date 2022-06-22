@@ -10,14 +10,13 @@ export const ContainerProjects = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
-  height: 160vh;
-
   .containerProjects {
     display: flex;
     flex-direction: column;
     padding-top: 150px;
     align-items: center;
-    height: 80vh;
+    min-height: 100vh;
+    max-height: auto;
     margin-left: 18rem;
   }
   .title-projects {

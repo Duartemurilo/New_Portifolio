@@ -22,7 +22,7 @@ function Footer() {
         />
       </div>
 
-      <p className="text-footer">Feito Pelo brabo do Murilo ❤</p>
+      <p className="text-footer">Feito pelo brabo do Murilo ❤</p>
     </ContainerFooter>
   );
 }

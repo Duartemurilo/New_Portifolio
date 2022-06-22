@@ -1,24 +1,22 @@
-import React, { useState, useContext } from "react";
+import React, { useState } from "react";
 import react_icon from "../../images/react_icon.svg";
 import js_icon from "../../images/js_icon.svg";
 import html_icon from "../../images/html_icon.svg";
 import css_icon from "../../images/css_icon.svg";
 
 import { Link } from "react-router-dom";
-import { ContainerSideBar } from "./style_side_bar";
+import { ContainerSideBar } from "./styles";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { FaFolderOpen } from "react-icons/fa";
 import { FaFolder } from "react-icons/fa";
-import myContext from "../../context/AppContext";
 
 function SideBar() {
   const [open, setOpen] = useState(true);
-  const { activeSideBar } = useContext(myContext);
 
   return (
     <ContainerSideBar>
-      <aside className={activeSideBar ? "side-bar-container" : "active"}>
+      <aside>
         <div className="titlesideBar">
           <p>EXPLORER</p>
         </div>

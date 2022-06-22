@@ -3,8 +3,8 @@ import react_icon from "../../images/react_icon.svg";
 import js_icon from "../../images/js_icon.svg";
 import html_icon from "../../images/html_icon.svg";
 import css_icon from "../../images/css_icon.svg";
-import Menu from "./Menu/Menu";
-import { ContainerfileHeader } from "./style_file_header";
+import Menu from "./Menu";
+import { ContainerfileHeader } from "./styles";
 
 function FileHeader() {
   return (

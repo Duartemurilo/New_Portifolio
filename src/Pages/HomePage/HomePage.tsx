@@ -1,9 +1,9 @@
 import React from "react";
-import FileHeader from "../../Components/FIlesHeader/FileHeader";
-import Header from "../../Components/Header/Header";
-import SideBar from "../../Components/SideBar/SideBar";
+import FileHeader from "../../Components/FIlesHeader";
+import Header from "../../Components/Header";
+import SideBar from "../../Components/SideBar";
 import { ContainerHomePage } from "./style_home";
-import CardSpecialization from "../../Components/CardSpecialization/CardSpecialization";
+import CardSpecialization from "./CardSpecialization";
 import js_icon from "../../images/js_icon.svg";
 import css_icon from "../../images/css_icon.svg";
 import react_icon from "../../images/react_icon.svg";
@@ -12,7 +12,7 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MenuMobile from "../../Components/MenuMobile/MenuMobile";
 import { useContext } from "react";
 import myContext from "../../context/AppContext";
-import Footer from "../../Components/Footer/Footer";
+import Footer from "../../Components/Footer";
 
 function HomePage() {
   const { activeSideBar } = useContext(myContext);
@@ -31,7 +31,11 @@ function HomePage() {
               <span className="span">{"<"}</span>Olá 👋 eu sou o
             </p>
             <h1>
-              Murilo Duarte <span className="span">{"/>"}</span>{" "}
+              Murilo Duarte <span className="span">{"/"}</span>
+              <span className="span" id="closetag">
+                {" "}
+                {">"}
+              </span>
             </h1>
             <h3 className="line">Front-End Developer</h3>
             <a

@@ -1,12 +1,12 @@
 import React from "react";
-import Header from "../../Components/Header/Header";
-import FileHeader from "../../Components/FIlesHeader/FileHeader";
+import Header from "../../Components/Header";
+import FileHeader from "../../Components/FIlesHeader";
 import MenuMobile from "../../Components/MenuMobile/MenuMobile";
-import SideBar from "../../Components/SideBar/SideBar";
+import SideBar from "../../Components/SideBar";
 import { useContext } from "react";
 import myContext from "../../context/AppContext";
 import contacts from "../../data/contacts";
-import Footer from "../../Components/Footer/Footer";
+import Footer from "../../Components/Footer";
 import { ContainerContact } from "./style_contact";
 
 function Contact() {
@@ -21,7 +21,7 @@ function Contact() {
           <MenuMobile />
           <main className="containerContact">
             <div className="containerTitle">
-              <h1 className="title">Vamos conversar!🤙</h1>
+              <h1 className="title">Vamos conversar? 🤙</h1>
               <h2 className="message">vamos trabalhar juntos?</h2>
             </div>
             <div className="list-contact">

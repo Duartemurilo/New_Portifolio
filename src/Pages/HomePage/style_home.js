@@ -14,7 +14,7 @@ export const ContainerHomePage = styled.div`
     p {
       font-size: 20px;
       color: ${emphasisColor};
-      font-weight: 300;
+      font-weight: 600;
     }
     h2 {
       font-size: 22px;
@@ -29,9 +29,11 @@ export const ContainerHomePage = styled.div`
 
   .span {
     color: ${emphasisColor};
-    font-weight: 300;
+    font-weight: 600;
   }
-
+  #closetag {
+    margin-left: -24px;
+  }
   .line {
     color: white;
     font-weight: 300;
@@ -85,7 +87,6 @@ export const ContainerHomePage = styled.div`
     background-color: ${primaryColor};
     border: none;
     outline: none;
-    cursor: pointer;
 
     a {
       text-decoration: none;
@@ -105,10 +106,11 @@ export const ContainerHomePage = styled.div`
   }
 
   @media screen and (max-width: 1375px) {
-    .main-wrapper {
+    .wrapper {
       flex-direction: column-reverse;
       justify-content: center;
       align-items: center;
+      margin-left: -0.2rem;
     }
 
     #specialization {
