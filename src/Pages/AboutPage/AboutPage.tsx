@@ -4,7 +4,7 @@ import FileHeader from "../../Components/FIlesHeader";
 import MenuMobile from "../../Components/MenuMobile/MenuMobile";
 import SideBar from "../../Components/SideBar";
 import Footer from "../../Components/Footer";
-import { ContainerAboutPage } from "./style_about_page";
+import { Container } from "./style";
 import { useContext } from "react";
 import myContext from "../../context/AppContext";
 import ContentAbout from "./ContentAbout";
@@ -12,16 +12,16 @@ import ContentAbout from "./ContentAbout";
 function AboutPage() {
   const { activeSideBar } = useContext(myContext);
   return (
-    <ContainerAboutPage>
+    <Container>
       <Header />
       {!activeSideBar && <SideBar />}
-      <section className="main-container">
-        <FileHeader />
-        <MenuMobile />
-        <ContentAbout />
-      </section>
+
+      <FileHeader />
+      <MenuMobile />
+      <ContentAbout />
+
       <Footer />
-    </ContainerAboutPage>
+    </Container>
   );
 }
 

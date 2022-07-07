@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mobile } from "../../Constants/brekpoints";
 import { primaryColor, borderColor } from "../../Constants/color";
 
 export const ContainerSideBar = styled.div`
@@ -59,7 +60,7 @@ export const ContainerSideBar = styled.div`
     width: 18px;
   }
 
-  @media screen and (max-width: 1150px) {
+  @media screen and (max-width: ${mobile}px) {
     right: 0;
     left: auto;
     top: 42px;

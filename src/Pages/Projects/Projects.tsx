@@ -8,7 +8,7 @@ import SideBar from "../../Components/SideBar";
 import Footer from "../../Components/Footer";
 import { useContext } from "react";
 import myContext from "../../context/AppContext";
-import { ContainerProjects } from "./style_projects";
+import { ContainerProjects, ListProject, Main } from "./styles";
 import Project from "../../Components/Project";
 
 function Projects() {
@@ -18,33 +18,31 @@ function Projects() {
     <ContainerProjects>
       <Header />
       {!activeSideBar && <SideBar />}
-      <section className="flex-container">
-        <section className="main-container">
-          <FileHeader />
-          <MenuMobile />
-          <main className="containerProjects">
-            <h1 className="title-projects">Meus projetos</h1>
-            <div className="projects-container">
-              {projects?.map(
-                (
-                  { name, src, repository, description, site, technologies },
-                  index
-                ) => (
-                  <Project
-                    name={name}
-                    src={src}
-                    repository={repository}
-                    description={description}
-                    site={site}
-                    technologies={technologies}
-                    index={index}
-                  />
-                )
-              )}
-            </div>
-          </main>
-        </section>
-      </section>
+
+      <FileHeader />
+      <MenuMobile />
+      <Main>
+        <h1>Meus projetos</h1>
+        <ListProject>
+          {projects?.map(
+            (
+              { name, src, repository, description, site, technologies },
+              index
+            ) => (
+              <Project
+                name={name}
+                src={src}
+                repository={repository}
+                description={description}
+                site={site}
+                technologies={technologies}
+                index={index}
+              />
+            )
+          )}
+        </ListProject>
+      </Main>
+
       <Footer />
     </ContainerProjects>
   );

@@ -2,16 +2,25 @@
 
 .App {
   font-family: "Fira Code", monospace;
+  overflow-x: hidden;
+}
+
+.side-bar {
+  display: flex;
 }
 
 .hamburger-menu {
   display: none;
 }
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1375px) {
   .main-container {
     width: 100vw;
     margin-left: auto;
+  }
+
+  .side-bar {
+    display: none;
   }
 
   .hamburger-menu {

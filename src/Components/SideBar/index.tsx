@@ -15,7 +15,7 @@ function SideBar() {
   const [open, setOpen] = useState(true);
 
   return (
-    <ContainerSideBar>
+    <ContainerSideBar className="side-bar">
       <aside>
         <div className="titlesideBar">
           <p>EXPLORER</p>

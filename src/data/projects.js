@@ -1,11 +1,20 @@
 import netflix_image from "../images/NetfliCloneImage.jpeg";
-import spotifyClone from "../images/spotify-ai-technology.jpeg";
+import likedinCloneImage from "../images/linkedin-clone-image.png";
 import game_image from "../images/tileset.gif";
 import nubank_image from "../images/NubankLogo.png";
 import pomodoro_image from "../images/pomodoro.png";
 import fintech_image from "../images/FIntech_image.png";
 
 const projects = [
+  {
+    name: "Linkedin Clone",
+    description:
+      "Projeto que tem o objetivo de clonar o layout a maior rede profissional do mundo. Nele você pode criar e postar suas propiás publicações.",
+    src: likedinCloneImage,
+    repository: "https://github.com/Duartemurilo/Linkedin-Clone",
+    site: "http://linkedin-clone-md.surge.sh/",
+    technologies: ["React", "Context", "Hooks", "CSS3", "HTML5"],
+  },
   {
     name: "Nubank Clone",
     description:
@@ -40,15 +49,6 @@ const projects = [
       "HTML5",
       "Materia-Ui",
     ],
-  },
-  {
-    name: "Spotify Clone",
-    description:
-      "Como um amante da música e por ser fascinado pela facilidade e qualidade que o spotify nos disponibiliza, tive a ideia de fazer um clone do spotify usando a API disponibilizada pelo próprio spotify.",
-    src: spotifyClone,
-    repository: "https://github.com/Duartemurilo/Spotify-Clone-",
-    site: "https://spotify-react-clone-md.surge.sh/",
-    technologies: ["React", "Context", "Hooks", "CSS3", "HTML5", "API"],
   },
   {
     name: "Pomodoro",

@@ -1,8 +1,9 @@
 import React from "react";
+import { Main, AboutContainer } from "./style";
 
 const ContentAbout = () => (
-  <main className="main-wrapper about">
-    <div className="about-container">
+  <Main>
+    <AboutContainer>
       <span className="span-tag html">{"<html>"}</span>
       <br />
       <span className="span-tag body">{"<body>"}</span>
@@ -35,8 +36,8 @@ const ContentAbout = () => (
       <span className="span-tag body">{"</body>"}</span>
       <br />
       <span className="span-tag html">{"</html>"}</span>
-    </div>
-  </main>
+    </AboutContainer>
+  </Main>
 );
 
 export default ContentAbout;

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mobile } from "../../Constants/brekpoints";
 import { primaryColor, borderColor } from "../../Constants/color";
 
 export const ContainerFooter = styled.div`
@@ -63,7 +64,7 @@ export const ContainerFooter = styled.div`
     color: var(--white-100);
   }
 
-  @media screen and (max-width: 855px) {
+  @media screen and (max-width: ${mobile}px) {
     .text-footer {
       display: none;
     }

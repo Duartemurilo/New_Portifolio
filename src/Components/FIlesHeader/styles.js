@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mobile } from "../../Constants/brekpoints";
 import {
   primaryColor,
   borderColor,
@@ -50,7 +51,7 @@ export const ContainerfileHeader = styled.div`
     width: 18px;
   }
 
-  @media screen and (max-width: 1150px) {
+  @media screen and (max-width: ${mobile}px) {
     position: absolute;
     left: 0;
     color: white;

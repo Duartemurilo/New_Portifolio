@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mobile } from "../../Constants/brekpoints";
 import {
   primaryColor,
   borderColor,
@@ -10,19 +11,6 @@ export const ContainerProjects = styled.div`
   display: flex;
   flex-direction: row;
   width: 100%;
-  .containerProjects {
-    display: flex;
-    flex-direction: column;
-    padding-top: 150px;
-    align-items: center;
-    min-height: 100vh;
-    max-height: auto;
-    margin-left: 18rem;
-  }
-  .title-projects {
-    font-size: 45px;
-    color: white;
-  }
 
   .projects-container {
     display: flex;
@@ -92,15 +80,40 @@ export const ContainerProjects = styled.div`
 
   @media screen and (max-width: 500px) {
     overflow-y: auto;
-    .title-projects {
-      font-size: 30px;
-    }
-
-    .containerProjects {
-      margin-left: 0rem;
-    }
     .card-project {
       height: 510px;
     }
+  }
+`;
+
+export const Main = styled.div`
+  display: flex;
+  flex-direction: column;
+  padding-top: 150px;
+  align-items: center;
+  margin-left: 18rem;
+  h1 {
+    font-size: 45px;
+    color: white;
+  }
+  @media screen and (max-width: ${mobile}px) {
+    margin-left: auto;
+    width: 100vw;
+    h1 {
+      font-size: 30px;
+    }
+  }
+`;
+
+export const ListProject = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  gap: 2rem;
+  margin-bottom: 100px;
+  justify-content: center;
+  height: auto;
+  @media screen and (max-width: ${mobile}px) {
+    width: 100%;
   }
 `;
