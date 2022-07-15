@@ -1,4 +1,4 @@
-import netflix_image from "../images/NetfliCloneImage.jpeg";
+import disney_image from "../images/disney-logo.png";
 import likedinCloneImage from "../images/linkedin-clone-image.png";
 import game_image from "../images/tileset.gif";
 import nubank_image from "../images/NubankLogo.png";
@@ -7,6 +7,42 @@ import fintech_image from "../images/FIntech_image.png";
 
 const projects = [
   {
+    name: "Nubank Clone",
+    description:
+      "Essa landingpage foi um grande desafio de design, utilizei conhecimentos de UX para construir esse projeto.",
+    src: nubank_image,
+    repository: "https://github.com/Duartemurilo/nubank-landingpage-clone",
+    site: "https://nubank-react-landing-page-md.surge.sh/",
+    technologies: [
+      "React",
+      "Context ",
+      "Hooks",
+      "CSS3",
+      "HTML5",
+      "MUI",
+      "react-router-dom",
+    ],
+  },
+  {
+    name: "Disney clone",
+    description:
+      "O Disney clone é um dos meus projetos favoritos, fiz ele com o objetivo de testar meus conhecimentos com APIS e estilização, é um site responsivo e bem detalhado.",
+    src: disney_image,
+    repository: "https://github.com/Duartemurilo/disney",
+    site: "http://disney-clone-md.surge.sh/",
+    technologies: [
+      "React",
+      "Context ",
+      "Hooks",
+      "CSS3",
+      "HTML5",
+      "MUI",
+      "react-router-dom",
+      "Tmdb-API",
+      "react-slick",
+    ],
+  },
+  {
     name: "Linkedin Clone",
     description:
       "Projeto que tem o objetivo de clonar o layout a maior rede profissional do mundo. Nele você pode criar e postar suas propiás publicações.",
@@ -14,24 +50,6 @@ const projects = [
     repository: "https://github.com/Duartemurilo/Linkedin-Clone",
     site: "http://linkedin-clone-md.surge.sh/",
     technologies: ["React", "Context", "Hooks", "CSS3", "HTML5"],
-  },
-  {
-    name: "Nubank Clone",
-    description:
-      "Essa landingpage foi um grande desafio de design, utilizei conhecimentos de UX para construir esse projeto.",
-    src: nubank_image,
-    repository: "https://github.com/Duartemurilo/nubank-landingpage-clone",
-    site: "https://nubank-react-landing-page-md.surge.sh/",
-    technologies: ["React", "Context ", "Hooks", "CSS3", "HTML5", "Materia-Ui"],
-  },
-  {
-    name: "Netflix clone",
-    description:
-      "O Netflix clone foi um dos meus primeiros projetos, fiz ele com o objetivo de testar meus conhecimentos com APIS e estilização, é um site responsivo e com bastante detalhes.",
-    src: netflix_image,
-    repository: "https://github.com/Duartemurilo/NetflixClone",
-    site: "https://clonenetflixmd.surge.sh/",
-    technologies: ["React", "Context ", "Hooks", "CSS3", "HTML5", "Materia-Ui"],
   },
   {
     name: "Game ",
@@ -47,7 +65,7 @@ const projects = [
       "Hooks",
       "CSS3",
       "HTML5",
-      "Materia-Ui",
+      "MUI",
     ],
   },
   {
@@ -64,7 +82,7 @@ const projects = [
       "Hooks",
       "CSS3",
       "HTML5",
-      "Materia-Ui",
+      "MUI",
     ],
   },
   {
